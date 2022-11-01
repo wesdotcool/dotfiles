@@ -1,0 +1,10 @@
+# Command line tools
+alias clean='find . -name "*~" -maxdepth 6 -delete'
+alias mark="printf '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n'"
+
+# Git aliases
+alias gits="git status"
+alias gpoh="git push origin head --set-upstream"
+alias gpr="gpoh && gh pr create --fill --web"
+alias wip="git add -A; git commit -m 'WIP'"
+alias gpts='git checkout master && git pull && git push staging'
